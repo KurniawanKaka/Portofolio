@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "tailwindcss-motion";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@theme {
+  --color-sec: #182738;
+  --color-merah: #ee6550;
+  --color-kuning: #f0b65b;
+  --color-birtu: #4381df;
+  --color-biru: #45c0d9;
+  --font-bebas: "Bebas Neue";
+  --font-poppins: "Poppins ";
+  --font-inter: "Inter ";
+
+  --animate-naik: naik 1s ease-in;
+  --animate-turun: turun 1s ease-in;
+
+  @keyframes turun {
+    0% {
+      transform: translateY(-75px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 100;
+    }
+  }
+
+  @keyframes naik {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    50% {
+      opacity: 50;
+      transform: translateY(-5px);
+    }
+    100% {
+      opacity: 100;
+      transform: translateY(0px);
+    }
+  }
+}

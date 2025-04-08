@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaka's Portofolio</title>
+    <link rel="stylesheet" href="/dist/kontak.css">
+</head>
+<body class="bg-[#060a1a] font-bebas px-40  h-svh text-white">
+    <nav class="flex justify-center px-10 py-10  text-xl animate-turun" >
+        <div class="flex text-white gap-10 w-auto  px-6 py-4 rounded-full fixed backdrop-blur-sm bg-sec/30">
+            <a href="/dist/index.html" class="w-20 text-center rounded-full hover:bg-white hover:text-black transition duration-700 ease-in-out" >Home</a>
+            <a href="/dist/edukasi.html" class="w-20 text-center rounded-full hover:bg-white hover:text-black transition duration-700 ease-in-out"  >Education</a>
+            <a href="/dist/project.html" class="w-20 text-center rounded-full hover:bg-white hover:text-black transition duration-700 ease-in-out">Project</a>
+            <a href="#" class="w-20 text-center rounded-full bg-white text-black transition duration-700 ease-in-out">Contact
+            </a>
+        </div>
+       </nav>
+
+    <div class="animate-naik">
+        <p class="text-3xl text-center mt-20">GET in touch</p>
+        <div class="flex gap-10 justify-center mt-10">
+            <a href="#"><img class="w-20" src="/img/instagram.png" alt=""></a>
+            <a href="#"><img class="w-20" src="/img/linkedin.png" alt=""></a>
+        </div>
+    </div>
+
+    <section class="py-12 px-4 text-white animate-naik" id="contact">
+        <div class="max-w-2xl mx-auto bg-sec p-8 rounded-2xl shadow-xl">
+          <h2 class="text-3xl mb-6 text-center">contact me</h2>
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+            
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-2xl font-medium ">Email</label>
+              <input type="email" id="email" name="email" required
+                class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+      
+            <!-- Subjek -->
+            <div>
+              <label for="subject" class="block text-2xl font-medium ">Subjek</label>
+              <input type="text" id="subject" name="subject" required
+                class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+      
+            <!-- Pesan -->
+            <div>
+              <label for="message" class="block text-2xl font-medium ">Pesan</label>
+              <textarea id="message" name="message" rows="5" required
+                class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+            </div>
+      
+            <!-- Tombol Kirim -->
+            <div class="text-center">
+              <button type="submit"
+                class="px-6 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300">
+                Kirim Pesan
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+</body>
+</html>
